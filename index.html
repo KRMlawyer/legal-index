@@ -9,8 +9,8 @@
 .header-visits{position:absolute;top:24px;left:28px;display:inline-flex;direction:rtl;align-items:center;gap:9px;max-width:190px;min-height:35px;padding:5px 10px;border:1px solid rgba(255,255,255,.25);border-radius:999px;background:rgba(255,255,255,.1);color:#eaf7f2;white-space:nowrap;box-shadow:none}
 .visit-head{font-size:12px;font-weight:650;line-height:1.2}
 .visit-body{display:inline-flex;align-items:center;gap:0;min-width:10px}
-.visit-chip{display:inline-flex;align-items:center;justify-content:center;background:transparent;border:0;padding:0;border-radius:0;min-height:0}
-.header-visits img{height:19px;width:auto;vertical-align:middle;border-radius:4px}
+.visit-chip{display:inline-block;position:relative;overflow:hidden;width:31px;height:21px;flex:0 0 31px;border-radius:5px;background:#245660;border:0;padding:0;min-height:0}
+.header-visits img{position:absolute;top:0;right:0;height:21px;width:auto;max-width:none;vertical-align:middle;border-radius:0}
 .header-visits #counterInfo{font-size:12px;color:#dcebe5;line-height:1.2}
 /* تذييل مختصر ومنظم */
 .footer{margin:22px 0 0;padding:28px 20px 24px;background:#fff;border:1px solid #e2e9e7;border-radius:15px;text-align:center;line-height:1.85;color:#60777b;box-shadow:0 4px 18px #173a4610}
@@ -19,7 +19,7 @@
 .footer-desc{font-size:13px;color:#61777b;margin-top:4px}
 .footer-rule{height:1px;max-width:560px;background:#e6eeeb;margin:17px auto 12px}
 .footer-last{display:flex;justify-content:center;align-items:center;gap:4px 16px;flex-wrap:wrap;font-size:11px;line-height:1.8}
-@media(max-width:650px){.footer{padding:23px 15px}.hero{min-height:unset}.hero-top{padding-left:0;padding-top:54px;min-height:unset}.hero-brand{text-align:right}.header-visits{top:12px;left:16px;max-width:175px;min-height:30px;padding:4px 9px;gap:7px}.visit-head{font-size:11px}.header-visits img{height:17px}.footer-last{display:block}.footer-last span{display:block}}
+@media(max-width:650px){.footer{padding:23px 15px}.hero{min-height:unset}.hero-top{padding-left:0;padding-top:54px;min-height:unset}.hero-brand{text-align:right}.header-visits{top:12px;left:16px;max-width:175px;min-height:30px;padding:4px 9px;gap:7px}.visit-head{font-size:11px}.header-visits img{height:21px}.footer-last{display:block}.footer-last span{display:block}}
 </style></head><body><main>
 <header class="hero"><div class="hero-top"><div class="header-visits" aria-label="الزيارات"><span class="visit-head">الزيارات</span><span class="visit-body"><span class="visit-chip"><img id="views" alt="عدد الزيارات" referrerpolicy="no-referrer" hidden></span><span id="counterInfo">—</span></span></div><div class="hero-brand"><div class="kicker">KRM · LEGAL INDEX</div><h1>فهرس المنشورات القانونية</h1><p>عبدالعزيز العبدالكريم | قانون الشركات والحوكمة</p></div></div><div class="stat-row"><div class="stat"><strong id="total">—</strong><small>مادة مهنية مفهرسة</small></div><div class="stat"><strong id="catCount">—</strong><small>تصنيف</small></div><div class="stat"><strong id="articleCount">—</strong><small>مقالات مطولة</small></div></div><div class="herofoot"><span id="lastIndexed">آخر منشور: —</span><span>التحديث: كل يوم سبت أسبوعيًا</span></div></header>
 <section class="section" id="categoriesSection"><div class="section-head"><h2>التصنيفات القانونية والحوكمية</h2><span class="muted">اختر الموضوع للوصول إلى منشوراته</span></div><div class="category-grid" id="categoryGrid"></div></section>
